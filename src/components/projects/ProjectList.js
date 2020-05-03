@@ -8,8 +8,8 @@ const ProjectList = ({ projects }) => {
 			{projects &&
 				projects.map((res) => {
 					return (
-						<Link to={'/project/' + res.id}>
-							<ProjectSummary project={res} key={res.id} />
+						<Link to={'/project/' + res.id} key={res.id}>
+							<ProjectSummary project={res} />
 						</Link>
 					);
 				})}
